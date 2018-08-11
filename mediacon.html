@@ -1,6 +1,25 @@
 <!doctype html>
 <html lang="en">
   <head>
+    
+  <style>
+  {
+    box-sizing: border-box;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+   }
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  </style>
+    
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -69,12 +88,20 @@
       </div>
     </figure>
     
+    <!--Image of Sponsor and Poster-->
+    <div class="row">
+    <div class="column">
+    <img src="img/mediaconPoster.jpeg" alt="Poster" style="width:100%">
+    </div>
+    <div class="column">
+    <img src="img/mediacoSponsor.jpeg" alt="sponsor" style="width:100%">
+    </div>
+    </div>
+    
     <div class="container-fluid padding" id="register">
-      
       <!--Details and registration-->
       <div class="row text-center padding">
         <div class="col-md-6">
-        <p> <img src="img/mediaconPoster.png" align="middle"> </p>
           <center><h3 class="display-5">Details</h3></center></br>
           </hr>
           <p>Date: 28th September 2018</p>
@@ -88,7 +115,6 @@
         </div>
 
         <div class="col-md-6">
-          <p> <img src="img/mediaConSponsor.png" align="middle"> </p>
           <center><h3 class="display-5">Registration</h3></center></br>
           </hr>
           <p>Member count: Up to 4 members per team</p>
